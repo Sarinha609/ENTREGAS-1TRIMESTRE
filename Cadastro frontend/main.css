@@ -1,0 +1,146 @@
+/* https://flatuicolors.com/palette/de */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@700&family=Sarala:wght@400;700&display=swap');
+
+:root {
+    font-family:  'Roboto', sans-serif;
+    --ascent-color: #0C619E;
+    --background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: -300px;
+}
+
+header {
+    padding: .60em;
+    background-color: var(--ascent-color);
+}
+
+span {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    margin-top: 1%;
+    background-color: #E0EEEE;
+    border: solid 2px var(--ascent-color);
+    width: 300px;
+    height: 32px;
+}
+
+.action-bar {
+    display: flex;
+}
+
+.action-bar .bt-add {
+    margin-top: 1%;
+    border:none;
+    height: 32px;
+    border-radius: 0 7px 7px 0;
+    width:80px;
+    font-weight:bold;
+    color:white;
+    background:var(--ascent-color)
+
+}
+
+.action-bar .bt-lupa {
+    margin-top: 1%;
+    border:none;
+    float:left;
+    height: 32px;
+    border-radius:7px 0 0 7px;
+    width:50px;
+    font-weight:bold;
+    background: var(--ascent-color);
+}
+
+.modal {
+    border: 1px solid #5F9EA0;
+    background-color: white;
+    box-shadow: 0px 0px 23px -15px #000000DD;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 2em;
+    position: relative;
+    width: 17em;
+}
+
+.modal .bt-close {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    right: -0.4px;
+    top: -0.2px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #EB3A2F;
+    cursor: pointer;
+}
+
+.modal .bt-salvar {
+    margin-top: 1.5%;
+    border:none;
+    height:28px;
+    border-radius:7px 7px 7px 7px;
+    width:60px;
+    font-weight:bold;
+    color: white; 
+    background: var(--ascent-color) ;
+}
+
+.modal h1 {
+    display: block;
+    border-bottom: 1px solid #5F9EA0;
+    margin-bottom: .5em;
+    padding-top: .5em;
+    margin: 0 0 .25em 0;
+    padding: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.modal form>div {
+    margin-bottom: 1em;
+}
+
+.modal form>div>label {
+    display: block;
+}
+
+.modal form>div>input {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.modal div.action {
+    display: block;
+    justify-content: flex-end;
+    border-top: 1px solid #5F9EA0;
+    margin-top: .5em;
+    padding-top: .5em;
+}
